@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- create mfon resume website -->
+<title>	Mfon Resume Website </title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style type="text/css">
+	
+	<!-- Create CSS -->
+	.custom-navbrand{
+		color:#777;text-shadow:0 1px 0 #fff;
+		font-size:20px;
+	}
+	.custom-navbrand:hover{
+		color:#777;text-shadow:0 1px 0 #fff;
+	}
+	body{
+		position:relative;
+	}
+	//#mainNavbar3{
+	//	position:fixed;
+	//	top:40px;
+	//}
+	.affix{
+		top:40px;
+	}
+	body { 
+		background: url(../images/Background.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+	p {
+		font-size: 15px;
+		color: white;
+		font-weight: 200;
+		letter-spacing: 1;
+	}
+	h4{
+		font-size: 20px;
+		color:#0000ff;
+	}
+	.hidecontent{
+		display:none;
+	}
+	
+.container {
+    padding-right: 15px;
+    padding-left: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+	</style>
+<link rel="stylesheet" type="text/css" href="css/master.css"/>
+<script language="javaScript">
+
+<!-- Create functions -->
+function toggleContent(id){
+ if (id =="divAboutMe"){
+		document.all.divAboutMe.className="container";
+		document.all.divExperience.className="hidecontent ";
+		document.all.divSkills.className="hidecontent";
+		document.all.divEducation.className="hidecontent";
+		document.all.divContact.className="hidecontent";
+		
+ }
+ else if(id=="divExperience"){
+		document.all.divAboutMe.className="hidecontent";
+		document.all.divExperience.className="container";
+		document.all.divSkills.className="hidecontent";
+		document.all.divEducation.className="hidecontent";
+		document.all.divContact.className="hidecontent";
+		document.all.activelink.className="";
+ }else if(id=="divSkills"){
+		document.all.divAboutMe.className="hidecontent";
+		document.all.divExperience.className="hidecontent";
+		document.all.divSkills.className="container";
+		document.all.divEducation.className="hidecontent";
+		document.all.divContact.className="hidecontent";
+ 
+ }else if(id=="divEducation"){
+		document.all.divAboutMe.className="hidecontent";
+		document.all.divExperience.className="hidecontent";
+		document.all.divSkills.className="hidecontent";
+		document.all.divEducation.className="container";
+		document.all.divContact.className="hidecontent";
+ 
+ }else if(id=="divContact"){
+		document.all.divAboutMe.className="hidecontent";
+		document.all.divExperience.className="hidecontent";
+		document.all.divSkills.className="hidecontent";
+		document.all.divEducation.className="hidecontent";
+		document.all.divContact.className="container";
+ 
+ }
+ 
+ 
+}
+
+</script>
+
+</head>
+
+<body>
+<!-- create navigation bars -->
+	<nav id="mainNavbar" class="navbar navbar-inverse navbar-fixed-top">
+	 <div class="container">
+		<div class="navbar-header">	
+			<button type="button" class="navbar-toggle"  data-toggle="collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active" id="activelink"><a href="javascript:toggleContent('divAboutMe');">About me</a></li>
+				<li class="active" id="activelink"><a href="javascript:toggleContent('divExperience');">Experience</a></li>
+				<li class="active" id="activelink"><a href="javascript:toggleContent('divSkills');">Skills</a></li>
+				<li class="active" id="activelink"><a href="javascript:toggleContent('divEducation');">Education</a></li>
+				<li class="active" id="activelink"><a href="javascript:toggleContent('divContact');">Contact</a></li>
+				
+			</ul>
+		</div>
+	  </div>
+	
+	</nav> 
+	
+	
+	
+	
+	<br/><br/><br/><br/><br/>
+	
+	<div class="container" id="divAboutMe">
+	
+	<div class="col-xs-12">
+				<ul class="media-list">
+					<li class="media">
+						
+						
+							
+							<div class="media">
+								
+								<div class="media-body">
+								<div class="developer-box">
+								  <img class= "rot" src="images\mfon2.jpg" width="100px;" height="100px;" />
+								   
+								  <h1>Mfon Barney</h1>
+								  <h3>Software Developer</h3>
+								  <div class="line-break"</div>
+								  <p>My passion lies in traveling.I also enjoy spending time with my family.</p>
+								  <p>I am a recent graduate from Tallahassee Community College with an Associate Degree in Computer Science. 
+									I have worked in customer service sector for over 15 years. 
+									I am currently seeking an Internship or Entry-Level Computer Programmer position with an organization where 
+									I can exercise my knowledge gained from my field of study to further enhance my software development skills.
+									I am a hard worker, able to work in a team or self-directed setting, quick learner, detailed oriented, 
+									self-discipline and high responsibility is my principal.</p>
+									 
+									<!---create social-icons for the page---> 
+								  <div class="social-icons">
+								   <a href="http://www.facebook.com/mfonbarney"target="_blank"><i class="fa fa-facebook"></i></a>
+								   <a href="http://www.twitter.com/mfonbarney"target="_blank"><i class="fa fa-twitter"></i></a>
+								   <a href="http://www.globe.com/mfonbarney"target="_blank"><i class="fa fa-globe"></i></a>
+								   <a href="http://www.linkedin.com/mfonbarney"target="_blank"><i class="fa fa-linkedin"></i>
+								  </div>
+								</div>
+									
+									
+								</div>
+							</div>
+							
+						
+					</li>
+						
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+		
+	
+		
+	<div class="container hidecontent" id="divExperience">	
+		<br/><br/><br/>
+		
+		
+		
+		<div class="col-xs-12">
+				<ul class="media-list">
+					<li class="media">
+						
+						<div class="media-body">
+							<h4 class="media-heading">Regulatory Specialist I,Dept. of Health, Division of MQA, Tallahassee, FL <i>2012 - 2013</i></h4>
+							<p>•	Answered incoming phone calls regarding healthcare licensure <br/>
+							   •	Navigated computer systems to obtain information <br/>•	Issued and reset password to current and new licensure <br/>
+								•	Exercised independent judgment in dealing with consumers and licensees
+
+							</p>
+							<div class="media">
+								<div class="media-left">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Financial Service Officer II, Florida Commerce Credit Union, Tallahassee, FL <i>2004 to 2011</i></h4>
+									<p>• Opened new accounts and new loans using Symitar and Encompass system. <br/>
+										•	Screened new members through Encompass system <br/>
+										•	Reset account password <br/>
+										•	Provided access to safe deposit boxes and performed monthly audits.
+									</p>
+									<div class="media">
+										
+										<div class="media-body">
+											<h4 class="media-heading">Business Banking Assistant, Associated Bank, Mendota Heights, MN <i>2003 to 2004</i></h4>
+											<p>• Processed retail and commercial loan requests <br/>
+												•	Reviewed and maintained loan files <br/>
+												•	Processed account transfers, loan payments and reviewed overdrafts.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</li>
+						<li class="media">
+							
+							<div class="media-body">
+								<h4 class="media-heading">Mortgage Servicing, Associated Bank, Mendota Heights, MN <i>2002 to 2003</i></h4>
+								<p>•	Booked first mortgages and construction loans into the mainframe computer system.<br/>
+									•	Processed payoffs, reconciled accounts in a timely manner and assisted department as needed.<br/>
+								•	Completed loan maintenance changes. 
+								</p>
+							</div>
+						</li>
+						
+						
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+	<div class="container hidecontent" id="divSkills">	
+		<br/><br/><br/>
+		
+		
+		
+		<div class="col-xs-12">
+				<ul class="media-list">
+					<li class="media">
+						
+						<div class="media-body">
+							<h4 class="media-heading">Skills</h4>
+							<p>Programming Languages familiar with Java, C#, C++, VB.NET, PHP, SQL, HTML, XML, CSS, jQuery, JavaScript, Microsoft Office Suite and Microsoft Access Certified.</p>
+							
+						
+						
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+	
+	<div class="container hidecontent" id="divEducation">	
+		<br/><br/><br/>
+		
+		
+		
+		<div class="col-xs-12">
+				<ul class="media-list">
+					<li class="media">
+						
+						<div class="media-body">
+							<h4 class="media-heading">Education</h4>
+							<p>Tallahassee Community College, Tallahassee, FL (2014 to 2017)
+								Associate Degree in Computer Science <br/>
+
+							Tallahassee Community College, Tallahassee, FL (2011 to 2012)
+								Health Information Specialist, Certificate <br/>
+	        
+							Flagler College, Tallahassee, FL (2008 to 2011)
+								Bachelor’s Degree in Business Administration
+							</p>
+							
+						
+						
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+	<div class="container hidecontent" id="divContact">	
+		<br/><br/><br/>
+		
+		
+		
+		<div class="col-xs-12">
+				<ul class="media-list">
+					<li class="media">
+						
+						<div class="media-body">
+							<h4 class="media-heading">Contact</h4>
+							<p>Email address:udohmfon@hotmail.com <br/>
+								Phone Number: 763-245-6592
+							</p>
+							
+						
+						
+				</ul>
+				
+			</div>
+			
+			
+		</div>
+	
+</body>
+</html>
